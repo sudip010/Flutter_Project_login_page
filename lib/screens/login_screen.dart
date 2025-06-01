@@ -18,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
       String username = _usernameController.text.trim();
       String password = _passwordController.text;
 
-      if (username == 'admin' && password == '1234') {
+      if (username == 'user@user.com' && password == '12345678') {
         _showDialog('Login Successful!', 'Welcome, $username!');
       } else {
         _showDialog('Login Failed', 'Invalid username or password.');
